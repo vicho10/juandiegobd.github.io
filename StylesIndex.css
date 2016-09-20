@@ -1,0 +1,51 @@
+body {margin: 0;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+
+}
+ul.topnav li {
+    float: right;
+    }
+ul.topnav li a {
+        color: white;
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+ul.topnav li a:hover:not(.active){
+        background-color: gainsboro;
+    }
+ul.topnav li a.active{
+        background-color: #dddddd;
+    }
+ul.topnav li.left {float: left;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.left, 
+    ul.topnav li {float: none;}
+}
+    
+/*------------------------------------------------------ imagen full screen */    
+#fulls {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+     z-index: -1;
+}
+#fulls img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
